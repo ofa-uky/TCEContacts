@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.primary-contact {
+    background-color: #e6f3ff;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    /* Add remaining modal styles */
+}
+
+/* Add more styles as needed */
