@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Access Management</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Course Access Contacts</h1>
+    
+    <!-- Main Table -->
+    <table id="contactsTable">
+        <thead>
+            <tr>
+                <th>LinkBlue</th>
+                <th>Name</th>
+                <th>College</th>
+                <th>Department</th>
+                <th>Prefix</th>
+                <th>Access Level</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <!-- Control Section -->
+    <div class="controls">
+        <button onclick="showAddForm()">Add Contact</button>
+        <button onclick="exportCSV()">Export CSV</button>
+    </div>
+
+    <!-- Add Contact Form -->
+    <div id="addForm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideAddForm()">&times;</span>
+            <h2>Add New Contact</h2>
+            <form id="contactForm" onsubmit="return handleSubmit(event)">
+                <!-- Form fields here -->
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/validator.js"></script>
+    <script src="scripts/exporter.js"></script>
+</body>
+</html>
